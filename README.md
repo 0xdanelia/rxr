@@ -42,3 +42,16 @@ hello@world
 [0xdanelia]$ seq 1 5 | rxr '\n' ', ' | rxr '^' '{' | rxr ', $' '}'
 {1, 2, 3, 4, 5}
 ```
+
+### Options
+These flags must be set prior to declaring the expression and replacement text
+```
+rxr [OPTION...] EXPRESSION REPLACEMENT
+
+  -i, --ignore-case     treat uppercase and lowercase letters as the same
+  -a, --ascii-only      perform ascii-only matching instead of unicode
+  -d, --dot-all         the dot will match on everything, including newlines
+  -p, --print           print the number of replacements made
+      --count=NUM       if NUM > 0, limit the number of replacements to NUM
+      --help            display this help text and exit
+```
