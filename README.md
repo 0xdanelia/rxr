@@ -1,5 +1,5 @@
 ## Regular Expression Replacer
-A command line tool to *find + replace* using regular expressions.
+A command line tool to *find + replace* using regular expressions in linux.
 This tool uses Python's `re` module as its regex engine.
 
 ```
@@ -10,6 +10,14 @@ Pass input in via stdin. Set your regex and replacement text via command
 line arguments. Any input text matching your regex will be replaced by 
 your specified replacement text. Any unmatching text will remain unchanged. 
 Then the results are printed to stdout.
+
+### Installation
+rxr is a single Python file. Simply download the file, then copy it to a location in your `$PATH` to use it.
+```
+git clone https://github.com/0xdanelia/rxr
+cd rxr
+cp rxr.py /usr/local/bin/rxr
+```
 
 ### Examples
 
