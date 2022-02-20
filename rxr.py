@@ -130,7 +130,7 @@ def err_unknown_option(option):
     err_end()
 
 def err_during_replace(exc):
-    eprint('rxr: unknown error while performing replacement')
+    eprint('rxr: regex syntax error')
     eprint(exc)
     err_end()
 
