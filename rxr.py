@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 ### Regular Expression Replacer ###
-import sys, os, re
+import sys, re
 
 # read input, produce output
 def process():
